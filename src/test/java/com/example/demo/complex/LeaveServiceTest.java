@@ -14,7 +14,8 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class LeaveServiceTest {
 
-    public static final long ONE = 1L;
+    static final long ONE = 1L;
+
     @InjectMocks
     LeaveService leaveService;
 
@@ -33,32 +34,88 @@ class LeaveServiceTest {
     @DisplayName("Performer employee's request will be manually processed after 26th day")
     @Test
     void performerShouldGetExtraDaysOff() {
+        //given
+        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"PERFORMER", 10});
 
+        //when
+        Result result = leaveService.requestPaidDaysOff(30, ONE);
+
+        //then
+        verify(escalationManager).notifyNewPendingRequest(ONE);
+        verifyNoMoreInteractions(database);
+        verifyNoInteractions(emailSender);
+        verifyNoInteractions(messageBus);
+        assertEquals(Result.Manual, result);
     }
 
     @DisplayName("Performer employee does not get more than 45 days")
     @Test
     void performerShouldGetNoMoreThan45Days() {
+        //given
+        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"PERFORMER", 10});
+
+        //when
+        Result result = leaveService.requestPaidDaysOff(40, ONE);
+
+        //then
+        verifyNoInteractions(escalationManager);
+        verifyNoMoreInteractions(database);
+        verify(emailSender).send("next year");
+        verifyNoInteractions(messageBus);
+        assertEquals(Result.Denied, result);
 
     }
 
     @DisplayName("Slacker does not get any days")
     @Test
     void slackerShouldNotGetAnyDays() {
+        //given
+        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"SLACKER", 10});
 
+        //when
+        Result result = leaveService.requestPaidDaysOff(1, ONE);
+
+        //then
+        verifyNoInteractions(escalationManager);
+        verifyNoMoreInteractions(database);
+        verify(emailSender).send("next time");
+        verifyNoInteractions(messageBus);
+        assertEquals(Result.Denied, result);
 
     }
 
     @DisplayName("Regular employee gets up to 26 days")
     @Test
     void regularEmployeeShouldGetUpTo26Days() {
+        //given
+        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"SLACKER", 10});
 
+        //when
+        Result result = leaveService.requestPaidDaysOff(1, ONE);
+
+        //then
+        verifyNoInteractions(escalationManager);
+        verifyNoMoreInteractions(database);
+        verify(emailSender).send("next time");
+        verifyNoInteractions(messageBus);
+        assertEquals(Result.Denied, result);
     }
 
     @DisplayName("regular employee does not get more than 26 days")
     @Test
     void regularEmployeeShouldNotGetMoreThan26Days() {
+        //given
+        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"REGULAR", 10});
 
+        //when
+        Result result = leaveService.requestPaidDaysOff(16, ONE);
+
+        //then
+        verifyNoInteractions(escalationManager);
+        verify(database).save(new Object[]{"REGULAR", 26});
+        verify(messageBus).sendEvent("request approved");
+        verifyNoInteractions(emailSender);
+        assertEquals(Result.Approved, result);
     }
 
 
