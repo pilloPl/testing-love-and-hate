@@ -25,7 +25,7 @@ class LeaveService {
         int daysSoFar = (Integer) employeeData[1];
 
         Result result = null;
-        if (daysSoFar + days >= 26) {
+        if (daysSoFar + days > 26) {
 
             if (employeeStatus.equals("PERFORMER") && daysSoFar + days < 45) {
                 result = Result.Manual;

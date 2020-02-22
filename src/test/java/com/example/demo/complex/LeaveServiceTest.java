@@ -8,8 +8,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class LeaveServiceTest {
@@ -34,7 +34,6 @@ class LeaveServiceTest {
     @Test
     void performerShouldGetExtraDaysOff() {
 
-
     }
 
     @DisplayName("Performer employee does not get more than 45 days")
@@ -46,6 +45,7 @@ class LeaveServiceTest {
     @DisplayName("Slacker does not get any days")
     @Test
     void slackerShouldNotGetAnyDays() {
+
 
     }
 
