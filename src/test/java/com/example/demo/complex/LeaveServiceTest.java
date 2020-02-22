@@ -8,9 +8,13 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 @ExtendWith(MockitoExtension.class)
 class LeaveServiceTest {
 
+    public static final long ONE = 1L;
     @InjectMocks
     LeaveService leaveService;
 
@@ -26,10 +30,11 @@ class LeaveServiceTest {
     @Mock
     EmailSender emailSender;
 
-    @DisplayName("Performer employee gets more than 26 days")
+    @DisplayName("Performer employee's request will be manually processed after 26th day")
     @Test
     void performerShouldGetExtraDaysOff() {
-        //given
+
+
     }
 
     @DisplayName("Performer employee does not get more than 45 days")
@@ -55,7 +60,6 @@ class LeaveServiceTest {
     void regularEmployeeShouldNotGetMoreThan26Days() {
 
     }
-
 
 
 }
