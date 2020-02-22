@@ -84,26 +84,26 @@ class LeaveServiceTest {
 
     }
 
-    @DisplayName("Regular employee gets up to 26 days")
+    @DisplayName("regular employee does not get more than 26 days")
     @Test
-    void regularEmployeeShouldGetUpTo26Days() {
+    void regularEmployeeShouldNotGetMoreThan26Days() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"SLACKER", 10});
+        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"REGULAR", 10});
 
         //when
-        Result result = leaveService.requestPaidDaysOff(1, ONE);
+        Result result = leaveService.requestPaidDaysOff(20, ONE);
 
         //then
         verifyNoInteractions(escalationManager);
         verifyNoMoreInteractions(database);
-        verify(emailSender).send("next time");
+        verify(emailSender).send("next year");
         verifyNoInteractions(messageBus);
         assertEquals(Result.Denied, result);
     }
 
-    @DisplayName("regular employee does not get more than 26 days")
+    @DisplayName("Regular employee gets up to 26 days")
     @Test
-    void regularEmployeeShouldNotGetMoreThan26Days() {
+    void regularEmployeeShouldGetUpTo26Days() {
         //given
         when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"REGULAR", 10});
 

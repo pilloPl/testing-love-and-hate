@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab382156-e954-44e7-9455-4d7c5e540700" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,12 +40,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="java" value="2944" />
+          <entry key="java" value="2991" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2944" />
+          <entry key="JAVA" value="2991" />
           <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
@@ -53,20 +53,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="580">
+              <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+            <state relative-caret-position="522">
+              <caret line="114" column="46" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,8 +161,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/complex/Basket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/complex/BasketService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java" />
       </list>
     </option>
   </component>
@@ -389,7 +389,7 @@
     <property name="SearchEverywhereHistoryKey" value="auto organize import&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582390175853" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582390455232" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -455,26 +455,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.complex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.complex" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
-      <option name="METHOD_NAME" value="performerShouldGetExtraDaysOff" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LeaveServiceTest.performerShouldGetNoMoreThan45Days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -486,6 +466,26 @@
       <option name="PACKAGE_NAME" value="com.example.demo.complex" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
       <option name="METHOD_NAME" value="performerShouldGetNoMoreThan45Days" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeaveServiceTest.regularEmployeeShouldGetUpTo26Days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.complex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.complex" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
+      <option name="METHOD_NAME" value="regularEmployeeShouldGetUpTo26Days" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -573,19 +573,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="JUnit.LeaveServiceTest.performerShouldGetExtraDaysOff" />
       <item itemvalue="JUnit.LeaveServiceTest.performerShouldGetNoMoreThan45Days" />
       <item itemvalue="JUnit.LeaveServiceTest.slackerShouldNotGetAnyDays" />
       <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" />
       <item itemvalue="JUnit.LeaveServiceTest" />
+      <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldGetUpTo26Days" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LeaveServiceTest" />
+        <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldGetUpTo26Days" />
         <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" />
         <item itemvalue="JUnit.LeaveServiceTest.slackerShouldNotGetAnyDays" />
         <item itemvalue="JUnit.LeaveServiceTest.performerShouldGetNoMoreThan45Days" />
-        <item itemvalue="JUnit.LeaveServiceTest.performerShouldGetExtraDaysOff" />
       </list>
     </recent_temporary>
   </component>
@@ -602,29 +602,11 @@
       <workItem from="1582230814548" duration="8543000" />
       <workItem from="1582240357102" duration="44000" />
       <workItem from="1582240421489" duration="3397000" />
-      <workItem from="1582323176164" duration="2788000" />
+      <workItem from="1582323176164" duration="2929000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(5) - 2020.02.21 at 01h 01m 41s.xml">
-      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(1) - 2020.02.21 at 01h 02m 12s.xml">
-      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LeaveServiceTest_performerShouldGetExtraDaysOff - 2020.02.22 at 17h 37m 44s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LeaveServiceTest_performerShouldGetExtraDaysOff - 2020.02.22 at 17h 39m 16s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LeaveServiceTest_performerShouldGetExtraDaysOff - 2020.02.22 at 17h 39m 53s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LeaveServiceTest_performerShouldGetNoMoreThan45Days - 2020.02.22 at 17h 40m 11s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetNoMoreThan45Days" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LeaveServiceTest_performerShouldGetExtraDaysOff - 2020.02.22 at 17h 40m 16s.xml">
       <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" configurationId="JUnit" />
     </history-entry>
@@ -637,9 +619,27 @@
     <history-entry file="LeaveServiceTest_slackerShouldNotGetAnyDays - 2020.02.22 at 17h 44m 10s.xml">
       <configuration name="LeaveServiceTest.slackerShouldNotGetAnyDays" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 46m 45s.xml">
+      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 46m 50s.xml">
+      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 47m 13s.xml">
+      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 47m 37s.xml">
+      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 49m 35s.xml">
+      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LeaveServiceTest - 2020.02.22 at 17h 49m 55s.xml">
+      <configuration name="LeaveServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14772000" />
+    <option name="totallyTimeSpent" value="14913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
@@ -662,7 +662,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.11955421" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.11955421" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3295238" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -758,20 +758,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+        <state relative-caret-position="522">
+          <caret line="114" column="46" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
         </state>
       </provider>
     </entry>
