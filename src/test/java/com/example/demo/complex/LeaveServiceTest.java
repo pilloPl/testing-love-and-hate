@@ -6,7 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class LeaveServiceTest {
@@ -29,6 +32,7 @@ class LeaveServiceTest {
     @DisplayName("Performer employee gets more than 26 days")
     @Test
     void performerShouldGetExtraDaysOff() {
+        //given
     }
 
     @DisplayName("Performer employee does not get more than 45 days")
