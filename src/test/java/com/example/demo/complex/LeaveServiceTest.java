@@ -38,7 +38,7 @@ class LeaveServiceTest {
     @Test
     void performerShouldGetExtraDaysOff() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"PERFORMER", 10});
+        when(database.findByEmployeeId(ONE)).thenReturn(new Something(1L, "PERFORMER", 10));
 
         //when
         Result result = leaveService.requestPaidDaysOff(30, ONE);
@@ -55,7 +55,7 @@ class LeaveServiceTest {
     @Test
     void performerShouldGetNoMoreThan45Days() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"PERFORMER", 10});
+        when(database.findByEmployeeId(ONE)).thenReturn(new Something(1L, "PERFORMER", 10));
 
         //when
         Result result = leaveService.requestPaidDaysOff(40, ONE);
@@ -73,7 +73,7 @@ class LeaveServiceTest {
     @Test
     void slackerShouldNotGetAnyDays() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"SLACKER", 10});
+        when(database.findByEmployeeId(ONE)).thenReturn(new Something(1L, "SLACKER", 10));
 
         //when
         Result result = leaveService.requestPaidDaysOff(1, ONE);
@@ -81,7 +81,7 @@ class LeaveServiceTest {
         //then
         verifyNoInteractions(escalationManager);
         verifyNoMoreInteractions(database);
-        verify(emailSender).send("next time");
+        verify(emailSender).send("next year, champ!");
         verifyNoInteractions(messageBus);
         assertEquals(Result.Denied, result);
 
@@ -91,12 +91,14 @@ class LeaveServiceTest {
     @Test
     void regularEmployeeShouldNotGetMoreThan26Days() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"REGULAR", 10});
+        Something regular = new Something(1L, "REGULAR", 8);
+        when(database.findByEmployeeId(ONE)).thenReturn(regular);
 
         //when
         Result result = leaveService.requestPaidDaysOff(20, ONE);
 
         //then
+        assertEquals(regular.getDaysSoFar(), 8);
         assertEquals(Result.Denied, result);
     }
 
@@ -104,7 +106,7 @@ class LeaveServiceTest {
     @Test
     void r2() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"REGULAR", 10});
+        when(database.findByEmployeeId(ONE)).thenReturn(new Something(1L, "REGULAR", 10));
 
         //when
         Result result = leaveService.requestPaidDaysOff(20, ONE);
@@ -120,14 +122,14 @@ class LeaveServiceTest {
     @Test
     void regularEmployeeShouldGetUpTo26Days() {
         //given
-        when(database.findByEmployeeId(ONE)).thenReturn(new Object[]{"REGULAR", 10});
+        when(database.findByEmployeeId(ONE)).thenReturn(new Something(1L, "REGULAR", 10));
 
         //when
         Result result = leaveService.requestPaidDaysOff(16, ONE);
 
         //then
         verifyNoInteractions(escalationManager);
-        verify(database).save(new Object[]{"REGULAR", 26});
+        verify(database).save(isA(Something.class));
         verify(messageBus).sendEvent("request approved");
         verifyNoInteractions(emailSender);
         assertEquals(Result.Approved, result);

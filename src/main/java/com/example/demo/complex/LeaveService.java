@@ -1,5 +1,7 @@
 package com.example.demo.complex;
 
+import static com.example.demo.complex.Result.Manual;
+
 class LeaveService {
 
     final LeaveDatabase database;
@@ -17,42 +19,90 @@ class LeaveService {
     }
 
     Result requestPaidDaysOff(int days, Long employeeId) {
+
+        validate(days);
+
+        Something something = loadDataToDecide(employeeId);
+
+        Result result = decide(days, something);
+
+        //komunikacja
+        reactToDecision(something, result, employeeId);
+
+        return result;
+    }
+
+    private void reactToDecision(Something something, Result result, Long employeeId) {
+        if (result == Result.Approved) {
+            database.save(something);
+            messageBus.sendEvent("request approved");
+        }
+        if (result == Result.Denied) {
+            emailSender.send("next year, champ!");
+        }
+        if (result == Result.Manual) {
+            escalationManager.notifyNewPendingRequest(employeeId);
+        }
+    }
+
+    private void validate(int days) {
         if (days < 0) {
             throw new IllegalArgumentException();
         }
+    }
 
-        Object[] employeeData = database.findByEmployeeId(employeeId);
+    private Result decide(int days, Something something) {
+        return something.request(days);
+    }
 
-        String employeeStatus = (String) employeeData[0];
-        int daysSoFar = (Integer) employeeData[1];
+    private Something loadDataToDecide(Long employeeId) {
+        return database.findByEmployeeId(employeeId);
+    }
 
-        Result result = null;
-        if (daysSoFar + days > 26) {
 
-            if (employeeStatus.equals("PERFORMER") && daysSoFar + days < 45) {
-                result = Result.Manual;
-                escalationManager.notifyNewPendingRequest(employeeId);
+}
+
+
+class Something {
+    private Long employeeId;
+    private String employeeStatus;
+    private int daysSoFar;
+
+    Something(Long employeeId, String employeeStatus, int daysSoFar) {
+        this.employeeId = employeeId;
+        this.employeeStatus = employeeStatus;
+        this.daysSoFar = daysSoFar;
+    }
+
+    Result request(int newDays) {
+        if (daysSoFar + newDays > 26) {
+            if (employeeStatus.equals("PERFORMER") && daysSoFar + new TooManyDaysSolver(newDays).newDays < 45) {
+                return Manual;
             } else {
-                result = Result.Denied;
-                emailSender.send("next year, champ!");
+                return Result.Denied;
             }
-
         } else {
 
             if (employeeStatus.equals("SLACKER")) {
-                result = Result.Denied;
-                emailSender.send("next time");
+                return Result.Denied;
             } else {
-                result = Result.Approved;
-                messageBus.sendEvent("request approved");
+                daysSoFar = daysSoFar + newDays;
+                return Result.Approved;
             }
         }
+    }
 
-        if (result == Result.Approved) {
-            employeeData[1] = daysSoFar + days;
-            database.save(employeeData);
+    public int getDaysSoFar() {
+        return daysSoFar;
+    }
+
+    private class TooManyDaysSolver {
+        private int newDays;
+
+        public TooManyDaysSolver(int newDays) {
+            this.newDays = newDays;
         }
-        return result;
+
     }
 }
 
@@ -63,11 +113,11 @@ enum Result {
 
 class LeaveDatabase {
 
-    Object[] findByEmployeeId(Long employeeId) {
-        return new Object[0];
+    Something findByEmployeeId(Long employeeId) {
+        return new Something(employeeId, "employeeStatus", 2);
     }
 
-    void save(Object[] employeeData) {
+    void save(Something employeeData) {
 
     }
 }
