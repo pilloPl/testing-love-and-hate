@@ -46,7 +46,7 @@ class LeaveService {
             }
         }
 
-        if(result == Result.Approved) {
+        if (result == Result.Approved) {
             employeeData[1] = daysSoFar + days;
             database.save(employeeData);
         }
