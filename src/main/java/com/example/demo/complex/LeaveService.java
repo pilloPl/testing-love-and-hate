@@ -6,12 +6,14 @@ class LeaveService {
     final MessageBus messageBus;
     final EmailSender emailSender;
     final EscalationManager escalationManager;
+    final Configuration configuration;
 
-    LeaveService(LeaveDatabase database, MessageBus messageBus, EmailSender emailSender, EscalationManager escalationManager) {
+    LeaveService(LeaveDatabase database, MessageBus messageBus, EmailSender emailSender, EscalationManager escalationManager, Configuration configuration) {
         this.database = database;
         this.messageBus = messageBus;
         this.emailSender = emailSender;
         this.escalationManager = escalationManager;
+        this.configuration = configuration;
     }
 
     Result requestPaidDaysOff(int days, Long employeeId) {
@@ -32,7 +34,7 @@ class LeaveService {
                 escalationManager.notifyNewPendingRequest(employeeId);
             } else {
                 result = Result.Denied;
-                emailSender.send("next year");
+                emailSender.send("next year, champ!");
             }
 
         } else {
@@ -86,4 +88,14 @@ class EscalationManager {
 
     void notifyNewPendingRequest(Long employeeId) {
     }
+}
+
+class Configuration {
+
+    final int MAX_DAYS = 26;
+
+    int getMaxDays() {
+        return MAX_DAYS;
+    }
+
 }

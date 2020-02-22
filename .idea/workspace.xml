@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab382156-e954-44e7-9455-4d7c5e540700" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/complex/EmailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/complex/EmailSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/complex/EscalationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/complex/EscalationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/complex/LeaveDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/complex/LeaveDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/complex/LeaveService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/complex/LeaveService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/complex/MessageBus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/complex/MessageBus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/complex/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/complex/Result.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,6 +18,23 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/demo$_engine_junit_jupiter___class_com_example_demo_complex_LeaveServiceTest_.ic" NAME="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] Coverage Results" MODIFIED="1582393121201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.demo.complex.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$_engine_junit_jupiter___class_com_example_demo_complex_LeaveServiceTest___1_.ic" NAME="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (1) Coverage Results" MODIFIED="1582393165953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.demo.complex.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$_engine_junit_jupiter___class_com_example_demo_complex_LeaveServiceTest___2_.ic" NAME="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (2) Coverage Results" MODIFIED="1582393235980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.demo.complex.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$_engine_junit_jupiter___class_aaaa_.ic" NAME="[engine:junit-jupiter]/[class:aaaa] Coverage Results" MODIFIED="1582393263613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.demo.complex.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="250" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="224353372">
@@ -25,14 +50,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
+          <entry key="class" value="8" />
           <entry key="java" value="55" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
+          <entry key="CLASS" value="8" />
           <entry key="JAVA" value="55" />
           <entry key="XML" value="1" />
         </counts>
@@ -40,12 +65,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="java" value="2991" />
+          <entry key="java" value="3412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2991" />
+          <entry key="JAVA" value="3412" />
           <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
@@ -56,8 +81,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+            <state relative-caret-position="272">
+              <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+              <folding>
+                <element signature="e#2149#2150#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+                <element signature="e#2421#2422#0" expanded="true" />
+                <element signature="e#2448#2449#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,11 +96,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="114" column="46" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="46" />
+            <state relative-caret-position="173">
+              <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/DisplayName.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -171,6 +211,17 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="demo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="1680" />
@@ -389,7 +440,7 @@
     <property name="SearchEverywhereHistoryKey" value="auto organize import&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582390455232" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582396433461" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -420,7 +471,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LeaveServiceTest">
+  <component name="RunManager" selected="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -437,45 +488,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaveServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.complex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.complex" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeaveServiceTest.performerShouldGetNoMoreThan45Days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.complex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.demo.complex" />
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
-      <option name="METHOD_NAME" value="performerShouldGetNoMoreThan45Days" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeaveServiceTest.regularEmployeeShouldGetUpTo26Days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -486,16 +499,20 @@
       <option name="PACKAGE_NAME" value="com.example.demo.complex" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
       <option name="METHOD_NAME" value="regularEmployeeShouldGetUpTo26Days" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -505,17 +522,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo.complex" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
-      <option name="METHOD_NAME" value="regularEmployeeShouldNotGetMoreThan26Days" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="regularEmployeeShouldGetUpTo26Days" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaveServiceTest.slackerShouldNotGetAnyDays" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -525,12 +546,64 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.demo.complex" />
       <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
-      <option name="METHOD_NAME" value="slackerShouldNotGetAnyDays" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="regularEmployeeShouldGetUpTo26Days" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.complex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.complex" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
+      <option name="METHOD_NAME" value="regularEmployeeShouldGetUpTo26Days" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" />
+      </uniqueIds>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.complex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.complex" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.complex.LeaveServiceTest" />
+      <option name="METHOD_NAME" value="regularEmployeeShouldGetUpTo26Days" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -573,19 +646,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.DemoApplication" />
-      <item itemvalue="JUnit.LeaveServiceTest.performerShouldGetNoMoreThan45Days" />
-      <item itemvalue="JUnit.LeaveServiceTest.slackerShouldNotGetAnyDays" />
-      <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" />
-      <item itemvalue="JUnit.LeaveServiceTest" />
-      <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldGetUpTo26Days" />
+      <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (2)" />
+      <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (3)" />
+      <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (1)" />
+      <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (4)" />
+      <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LeaveServiceTest" />
-        <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldGetUpTo26Days" />
-        <item itemvalue="JUnit.LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" />
-        <item itemvalue="JUnit.LeaveServiceTest.slackerShouldNotGetAnyDays" />
-        <item itemvalue="JUnit.LeaveServiceTest.performerShouldGetNoMoreThan45Days" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (4)" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (1)" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (3)" />
+        <item itemvalue="JUnit.[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -602,48 +675,47 @@
       <workItem from="1582230814548" duration="8543000" />
       <workItem from="1582240357102" duration="44000" />
       <workItem from="1582240421489" duration="3397000" />
-      <workItem from="1582323176164" duration="2929000" />
+      <workItem from="1582323176164" duration="7753000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LeaveServiceTest_performerShouldGetExtraDaysOff - 2020.02.22 at 17h 40m 16s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(5) - 2020.02.22 at 19h 21m 51s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_performerShouldGetExtraDaysOff - 2020.02.22 at 17h 42m 02s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetExtraDaysOff" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest] - 2020.02.22 at 19h 22m 01s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_performerShouldGetNoMoreThan45Days - 2020.02.22 at 17h 42m 42s.xml">
-      <configuration name="LeaveServiceTest.performerShouldGetNoMoreThan45Days" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(2) - 2020.02.22 at 19h 22m 09s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_slackerShouldNotGetAnyDays - 2020.02.22 at 17h 44m 10s.xml">
-      <configuration name="LeaveServiceTest.slackerShouldNotGetAnyDays" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(3) - 2020.02.22 at 19h 26m 44s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (3)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 46m 45s.xml">
-      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(1) - 2020.02.22 at 19h 27m 16s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 46m 50s.xml">
-      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(4) - 2020.02.22 at 19h 27m 46s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (4)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 47m 13s.xml">
-      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(5) - 2020.02.22 at 19h 27m 57s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (5)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 47m 37s.xml">
-      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest] - 2020.02.22 at 19h 28m 41s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest]" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest_regularEmployeeShouldNotGetMoreThan26Days - 2020.02.22 at 17h 49m 35s.xml">
-      <configuration name="LeaveServiceTest.regularEmployeeShouldNotGetMoreThan26Days" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(2) - 2020.02.22 at 19h 29m 00s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (2)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LeaveServiceTest - 2020.02.22 at 17h 49m 55s.xml">
-      <configuration name="LeaveServiceTest" configurationId="JUnit" />
+    <history-entry file="[engine_junit-jupiter]_[class_com_example_demo_complex_LeaveServiceTest]_(3) - 2020.02.22 at 19h 29m 12s.xml">
+      <configuration name="[engine:junit-jupiter]/[class:com.example.demo.complex.LeaveServiceTest] (3)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14913000" />
+    <option name="totallyTimeSpent" value="19737000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22044729" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -654,17 +726,18 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36372846" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25227964" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39918947" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.11955421" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.11955421" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3295238" />
+      <window_info anchor="right" id="Coverage" sideWeight="0.50073856" side_tool="true" visible="true" weight="0.17571884" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -673,7 +746,7 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.49926144" weight="0.32960597" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -758,10 +831,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar!/org/junit/jupiter/api/DisplayName.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/example/demo/complex/LeaveServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="114" column="46" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="46" />
+        <state relative-caret-position="173">
+          <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -770,8 +850,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/demo/complex/LeaveService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+        <state relative-caret-position="272">
+          <caret line="36" column="59" lean-forward="true" selection-start-line="36" selection-start-column="59" selection-end-line="36" selection-end-column="59" />
+          <folding>
+            <element signature="e#2149#2150#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2448#2449#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
