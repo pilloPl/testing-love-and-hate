@@ -2,7 +2,7 @@ package com.example.demo.complex;
 
 import static com.example.demo.complex.Result.Manual;
 
-class LeaveService {
+public class LeaveService {
 
     final LeaveDatabase database;
     final MessageBus messageBus;
@@ -18,7 +18,7 @@ class LeaveService {
         this.configuration = configuration;
     }
 
-    Result requestPaidDaysOff(int days, Long employeeId) {
+    public Result requestPaidDaysOff(int days, Long employeeId) {
 
         validate(days);
 
@@ -104,11 +104,6 @@ class Something {
         }
 
     }
-}
-
-enum Result {
-
-    Approved, Denied, Manual
 }
 
 class LeaveDatabase {
