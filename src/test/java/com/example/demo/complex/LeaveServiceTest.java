@@ -31,46 +31,36 @@ class LeaveServiceTest {
 
     @DisplayName("Performer employee's request will be manually processed after 26th day")
     @Test
-    void performerShouldGetExtraDaysOff() {
+    void requests_of_performers_will_be_manually_processed_after_26th_day() {
 
     }
 
     @DisplayName("Performer employee does not get more than 45 days")
     @Test
-    void performerShouldGetNoMoreThan45Days() {
+    void performers_can_get_more_than_45_days() {
 
 
     }
 
     @DisplayName("Slacker does not get any days")
     @Test
-    void slackerShouldNotGetAnyDays() {
+    void slackers_do_not_get_any_leave() {
 
 
     }
 
     @DisplayName("regular employee does not get more than 26 days")
     @Test
-    void regularEmployeeShouldNotGetMoreThan26Days() {
+    void regular_employee_doesnt_get_more_than_26_days() {
 
     }
 
 
-    @DisplayName("Regular employee gets up to 26 days")
+    @DisplayName("Regular employee gets 26 days")
     @Test
-    void regularEmployeeShouldGetUpTo26Days() {
+    void regular_employee_gets_26_days() {
 
     }
 
 
 }
-
-//zmiana powoduje wywalke testow
-
-
-//zmienic liczbe dni urlopowych i wszyastko JEB
-
-//ciezko prztestowac w mockaxch decyzhe i efekty decyzji!
-
-//zmina tresxci maila zmienia perfoermea slackera etc
-//rozbic na 2 testy

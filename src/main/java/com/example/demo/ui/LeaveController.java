@@ -10,15 +10,20 @@ import org.springframework.web.bind.annotation.RestController;
 public class LeaveController {
 
     private final LeaveService leaveService;
+    private final HrService hrService;
+    private final ReportingService reportingService;
 
-    public LeaveController(LeaveService leaveService) {
+
+    public LeaveController(LeaveService leaveService, HrService hrService, ReportingService reportingService) {
         this.leaveService = leaveService;
+        this.hrService = hrService;
+        this.reportingService = reportingService;
     }
 
     public ResponseEntity requestLeave(Long employeeId, String sex, String type, int days) {
 
         if (type.equals("maternal")) {
-            if (sex != "F") {
+            if (hrService.qualifiedForMaternalLeave(employeeId, sex)) {
                 throw new IllegalStateException();
             }
             //maternal leave service
@@ -40,6 +45,24 @@ public class LeaveController {
             //occassional leave service
         }
 
+        reportingService.reportLeave(employeeId, type);
         return ResponseEntity.ok().build();
+    }
+}
+
+
+class HrService {
+
+    boolean qualifiedForMaternalLeave(Long employeeId, String sex) {
+        return true;
+    }
+
+
+}
+
+class ReportingService {
+
+    void reportLeave(Long employeeId, String type) {
+
     }
 }
