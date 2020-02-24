@@ -19,12 +19,15 @@ public class LeaveService {
             throw new IllegalArgumentException();
         }
 
+
+
+        Result result = null;
+
         Object[] employeeData = database.findByEmployeeId(employeeId);
 
         String employeeStatus = (String) employeeData[0];
         int daysSoFar = (Integer) employeeData[1];
 
-        Result result = null;
         if (daysSoFar + days > 26) {
 
             if (employeeStatus.equals("PERFORMER") && daysSoFar + days < 45) {
@@ -41,15 +44,13 @@ public class LeaveService {
                 result = Result.Denied;
                 emailSender.send("next time");
             } else {
+                employeeData[1] = daysSoFar + days;
                 result = Result.Approved;
+                database.save(employeeData);
                 messageBus.sendEvent("request approved");
             }
         }
 
-        if (result == Result.Approved) {
-            employeeData[1] = daysSoFar + days;
-            database.save(employeeData);
-        }
         return result;
     }
 }
