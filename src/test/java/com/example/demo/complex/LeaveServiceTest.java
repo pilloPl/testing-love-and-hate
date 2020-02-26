@@ -6,7 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 class LeaveServiceTest {
@@ -33,11 +36,12 @@ class LeaveServiceTest {
     @Test
     void requests_of_performers_will_be_manually_processed_after_26th_day() {
 
+
     }
 
     @DisplayName("Performer employee does not get more than 45 days")
     @Test
-    void performers_can_get_more_than_45_days() {
+    void performers_cannot_get_more_than_45_days() {
 
 
     }
