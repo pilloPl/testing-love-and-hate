@@ -1,5 +1,6 @@
 package com.example.demo.complex;
 
+
 public class LeaveService {
 
     final LeaveDatabase database;
@@ -18,8 +19,6 @@ public class LeaveService {
         if (days < 0) {
             throw new IllegalArgumentException();
         }
-
-
 
         Result result = null;
 
@@ -82,4 +81,8 @@ class EscalationManager {
 
     void notifyNewPendingRequest(Long employeeId) {
     }
+}
+
+class Configuration {
+
 }
