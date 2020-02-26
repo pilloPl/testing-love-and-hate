@@ -34,7 +34,7 @@ public class LeaveService {
                 escalationManager.notifyNewPendingRequest(employeeId);
             } else {
                 result = Result.Denied;
-                emailSender.send("next year");
+                emailSender.send("next time");
             }
 
         } else {
