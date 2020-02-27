@@ -28,7 +28,7 @@ public class LeaveController {
             }
             //maternal leave service
 
-        } else if (type.equals("regular")) {
+        } else if (type.equals("vacation")) {
 
             Result result = leaveService.requestPaidDaysOff(days, employeeId);
 
