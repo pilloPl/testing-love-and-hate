@@ -14,7 +14,11 @@ class Product {
     }
 
     public boolean isAvailable() {
-        return status == Status.Available;
+        if (status == Status.Available) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
