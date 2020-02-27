@@ -85,4 +85,12 @@ class EscalationManager {
 
 class Configuration {
 
+    int getMaxDaysForPerformers() {
+        return 45;
+    }
+
+    int getMaxDays() {
+        return 26;
+    }
+
 }
