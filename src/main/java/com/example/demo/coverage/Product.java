@@ -4,6 +4,10 @@ class Product {
 
     private Status status = Status.Available;
 
+    Product(Status status) {
+        this.status = status;
+    }
+
     enum Status {
         Available, Bought
 
