@@ -3,8 +3,6 @@ package com.example.demo.tdd;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class ProductTest {
 
 
@@ -47,7 +45,7 @@ class ProductTest {
 
 
     @Test
-    @DisplayName("can create a product which is just visible but not available")
+    @DisplayName("product in catalogue can be visible but not available")
     void can_create_unavailable_but_visible_product() throws Exception {
 
     }
