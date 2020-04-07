@@ -10,8 +10,7 @@ class ProductTest {
 
 
     @Test
-    @DisplayName("product in catalogue can be visible but not available")
-    void can_create_unavailable_but_visible_product() throws Exception {
+    void new_product_is_available() throws Exception {
 
         Product p = new Product(Available);
 
