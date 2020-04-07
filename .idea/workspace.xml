@@ -267,9 +267,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="y" value="-390" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -520,7 +522,7 @@
     <property name="SearchEverywhereHistoryKey" value="auto organize import&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582553177018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586267987218" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -562,7 +564,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LeaveServiceTest.requests_of_performers_will_be_manually_processed_after_26th_day">
+  <component name="RunManager" selected="JUnit.LeaveServiceTest">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -721,11 +723,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LeaveServiceTest.requests_of_performers_will_be_manually_processed_after_26th_day" />
         <item itemvalue="JUnit.LeaveServiceTest" />
-        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.LeaveServiceTest.requests_of_performers_will_be_manually_processed_after_26th_day" />
         <item itemvalue="JUnit.ProductTest.newAddedProductCanBeVisibleButNotAvailable" />
         <item itemvalue="JUnit.ProductTest.shouldNotChangePriceOfABoughtProduct" />
+        <item itemvalue="JUnit.ProductTest" />
       </list>
     </recent_temporary>
   </component>
