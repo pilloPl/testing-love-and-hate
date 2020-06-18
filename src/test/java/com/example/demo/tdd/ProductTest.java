@@ -1,6 +1,5 @@
 package com.example.demo.tdd;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class ProductTest {
@@ -51,7 +50,6 @@ class ProductTest {
 
 
     @Test
-    @DisplayName("product in catalogue can be visible but not available")
     void can_create_unavailable_but_visible_product() throws Exception {
 
     }
